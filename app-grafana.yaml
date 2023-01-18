@@ -20,5 +20,9 @@ spec:
     chart: grafana
     helm:
       parameters:
+        - name: 'admin.password'
+          value: admin
+        - name: 'ingress.enabled'
+          value: 'true'
         - name: 'ingress.hostname'
           value: $ARGOCD_APP_NAME.difinative.com

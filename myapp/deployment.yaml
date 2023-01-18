@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: ranjujohn/webserver:v2
+        image: ranjujohn/webserver:v1
         ports:
         - containerPort: 80
