@@ -7,6 +7,12 @@ spec:
   destination:
     name: in-cluster
     namespace: front-end
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
   project: default
   source:
     repoURL: https://charts.bitnami.com/bitnami
