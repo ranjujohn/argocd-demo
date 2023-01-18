@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: myapp-ingress
+  namespace: myapp
+spec:
+  rules:
+  - host: "myapp.difinative.com"
+    http:
+      paths:
+      - pathType: Prefix
+        backend:
+          service:
+            name: nginx
+            port:
+              number: 80
