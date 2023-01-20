@@ -25,4 +25,4 @@ spec:
         - name: 'ingress.enabled'
           value: 'true'
         - name: 'ingress.hostname'
-          value: $ARGOCD_APP_NAME.difinative.com
+          value: $ARGOCD_APP_NAME-demo.difinative.com
